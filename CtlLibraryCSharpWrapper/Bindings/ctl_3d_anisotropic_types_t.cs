@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_3d_anisotropic_types_t : uint {
+public enum ctl_3d_anisotropic_types_t {
   CTL_3D_ANISOTROPIC_TYPES_APP_CHOICE = 0,
   CTL_3D_ANISOTROPIC_TYPES_2X = 2,
   CTL_3D_ANISOTROPIC_TYPES_4X = 4,

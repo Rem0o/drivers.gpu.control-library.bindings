@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_pixtx_color_space_t : uint {
+public enum ctl_pixtx_color_space_t {
   CTL_PIXTX_COLOR_SPACE_REC709 = 0,
   CTL_PIXTX_COLOR_SPACE_REC2020 = 1,
   CTL_PIXTX_COLOR_SPACE_ADOBE_RGB = 2,

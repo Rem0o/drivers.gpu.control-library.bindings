@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_pixtx_color_model_t : uint {
+public enum ctl_pixtx_color_model_t {
   CTL_PIXTX_COLOR_MODEL_RGB_FR = 0,
   CTL_PIXTX_COLOR_MODEL_RGB_LR = 1,
   CTL_PIXTX_COLOR_MODEL_YCBCR_422_FR = 2,

@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_wire_format_color_model_t : uint {
+public enum ctl_wire_format_color_model_t {
   CTL_WIRE_FORMAT_COLOR_MODEL_RGB = 0,
   CTL_WIRE_FORMAT_COLOR_MODEL_YCBCR_420 = 1,
   CTL_WIRE_FORMAT_COLOR_MODEL_YCBCR_422 = 2,

@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_pixtx_config_opertaion_type_t : uint {
+public enum ctl_pixtx_config_opertaion_type_t {
   CTL_PIXTX_CONFIG_OPERTAION_TYPE_RESTORE_DEFAULT = 1,
   CTL_PIXTX_CONFIG_OPERTAION_TYPE_SET_CUSTOM = 2,
   CTL_PIXTX_CONFIG_OPERTAION_TYPE_MAX

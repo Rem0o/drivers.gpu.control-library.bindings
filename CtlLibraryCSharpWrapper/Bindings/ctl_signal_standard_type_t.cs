@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_signal_standard_type_t : uint {
+public enum ctl_signal_standard_type_t {
   CTL_SIGNAL_STANDARD_TYPE_UNKNOWN = 0,
   CTL_SIGNAL_STANDARD_TYPE_CUSTOM = 1,
   CTL_SIGNAL_STANDARD_TYPE_DMT = 2,

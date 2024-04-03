@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_emulated_typed_64bit_atomics_types_t : uint {
+public enum ctl_emulated_typed_64bit_atomics_types_t {
   CTL_EMULATED_TYPED_64BIT_ATOMICS_TYPES_DEFAULT = 0,
   CTL_EMULATED_TYPED_64BIT_ATOMICS_TYPES_TURN_ON = 1,
   CTL_EMULATED_TYPED_64BIT_ATOMICS_TYPES_TURN_OFF = 2,

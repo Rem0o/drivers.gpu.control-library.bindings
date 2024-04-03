@@ -10,11 +10,11 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_get_operation_flag_t : uint {
+public enum ctl_get_operation_flag_t {
   CTL_GET_OPERATION_FLAG_CURRENT = (1 << 0),
   CTL_GET_OPERATION_FLAG_DEFAULT = (1 << 1),
   CTL_GET_OPERATION_FLAG_CAPABILITY = (1 << 2),
-  CTL_GET_OPERATION_FLAG_MAX = 0x80000000
+  CTL_GET_OPERATION_FLAG_MAX = -2147483648
 }
 
 }

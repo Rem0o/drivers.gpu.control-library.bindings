@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_intel_arc_sync_profile_t : uint {
+public enum ctl_intel_arc_sync_profile_t {
   CTL_INTEL_ARC_SYNC_PROFILE_INVALID = 0,
   CTL_INTEL_ARC_SYNC_PROFILE_RECOMMENDED = 1,
   CTL_INTEL_ARC_SYNC_PROFILE_EXCELLENT = 2,

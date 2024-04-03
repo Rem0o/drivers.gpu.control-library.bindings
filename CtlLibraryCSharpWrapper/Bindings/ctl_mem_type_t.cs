@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_mem_type_t : uint {
+public enum ctl_mem_type_t {
   CTL_MEM_TYPE_HBM = 0,
   CTL_MEM_TYPE_DDR = 1,
   CTL_MEM_TYPE_DDR3 = 2,

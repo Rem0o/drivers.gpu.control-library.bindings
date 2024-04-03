@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_display_setting_audio_t : uint {
+public enum ctl_display_setting_audio_t {
   CTL_DISPLAY_SETTING_AUDIO_DEFAULT = 0,
   CTL_DISPLAY_SETTING_AUDIO_DISABLED = 1,
   CTL_DISPLAY_SETTING_AUDIO_MAX

@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_encoder_config_flag_t : uint {
+public enum ctl_encoder_config_flag_t {
   CTL_ENCODER_CONFIG_FLAG_INTERNAL_DISPLAY = (1 << 0),
   CTL_ENCODER_CONFIG_FLAG_VESA_TILED_DISPLAY = (1 << 1),
   CTL_ENCODER_CONFIG_FLAG_TYPEC_CAPABLE = (1 << 2),
@@ -22,7 +22,7 @@ public enum ctl_encoder_config_flag_t : uint {
   CTL_ENCODER_CONFIG_FLAG_SPLIT_DISPLAY = (1 << 8),
   CTL_ENCODER_CONFIG_FLAG_COMPANION_DISPLAY = (1 << 9),
   CTL_ENCODER_CONFIG_FLAG_MGPU_COLLAGE_DISPLAY = (1 << 10),
-  CTL_ENCODER_CONFIG_FLAG_MAX = 0x80000000
+  CTL_ENCODER_CONFIG_FLAG_MAX = -2147483648
 }
 
 }

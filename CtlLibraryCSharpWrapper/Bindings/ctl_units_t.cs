@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_units_t : uint {
+public enum ctl_units_t {
   CTL_UNITS_FREQUENCY_MHZ = 0,
   CTL_UNITS_OPERATIONS_GTS = 1,
   CTL_UNITS_OPERATIONS_MTS = 2,

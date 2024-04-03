@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_video_processing_feature_t : uint {
+public enum ctl_video_processing_feature_t {
   CTL_VIDEO_PROCESSING_FEATURE_FILM_MODE_DETECTION = 0,
   CTL_VIDEO_PROCESSING_FEATURE_NOISE_REDUCTION = 1,
   CTL_VIDEO_PROCESSING_FEATURE_SHARPNESS = 2,

@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_attached_display_mux_type_t : uint {
+public enum ctl_attached_display_mux_type_t {
   CTL_ATTACHED_DISPLAY_MUX_TYPE_NATIVE = 0,
   CTL_ATTACHED_DISPLAY_MUX_TYPE_THUNDERBOLT = 1,
   CTL_ATTACHED_DISPLAY_MUX_TYPE_TYPE_C = 2,

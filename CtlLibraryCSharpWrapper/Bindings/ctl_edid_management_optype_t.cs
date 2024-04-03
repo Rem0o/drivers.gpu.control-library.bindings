@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_edid_management_optype_t : uint {
+public enum ctl_edid_management_optype_t {
   CTL_EDID_MANAGEMENT_OPTYPE_READ_EDID = 1,
   CTL_EDID_MANAGEMENT_OPTYPE_LOCK_EDID = 2,
   CTL_EDID_MANAGEMENT_OPTYPE_UNLOCK_EDID = 3,
