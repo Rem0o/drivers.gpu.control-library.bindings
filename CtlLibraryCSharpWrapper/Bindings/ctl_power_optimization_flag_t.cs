@@ -10,13 +10,13 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_power_optimization_flag_t {
+public enum ctl_power_optimization_flag_t : uint {
   CTL_POWER_OPTIMIZATION_FLAG_FBC = (1 << 0),
   CTL_POWER_OPTIMIZATION_FLAG_PSR = (1 << 1),
   CTL_POWER_OPTIMIZATION_FLAG_DPST = (1 << 2),
   CTL_POWER_OPTIMIZATION_FLAG_LRR = (1 << 3),
   CTL_POWER_OPTIMIZATION_FLAG_LACE = (1 << 4),
-  CTL_POWER_OPTIMIZATION_FLAG_MAX = (1 << 31)
+  CTL_POWER_OPTIMIZATION_FLAG_MAX = 0x80000000
 }
 
 }

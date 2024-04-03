@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_data_type_t {
+public enum ctl_data_type_t : uint {
   CTL_DATA_TYPE_INT8 = 0,
   CTL_DATA_TYPE_UINT8 = 1,
   CTL_DATA_TYPE_INT16 = 2,

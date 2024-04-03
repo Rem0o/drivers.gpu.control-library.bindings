@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_operation_type_t {
+public enum ctl_operation_type_t : uint {
   CTL_OPERATION_TYPE_READ = 1,
   CTL_OPERATION_TYPE_WRITE = 2,
   CTL_OPERATION_TYPE_MAX

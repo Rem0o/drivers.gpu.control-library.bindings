@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_3d_msaa_types_t {
+public enum ctl_3d_msaa_types_t : uint {
   CTL_3D_MSAA_TYPES_APP_CHOICE = 0,
   CTL_3D_MSAA_TYPES_DISABLED = 1,
   CTL_3D_MSAA_TYPES_2X = 2,

@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_genlock_operation_t {
+public enum ctl_genlock_operation_t : uint {
   CTL_GENLOCK_OPERATION_GET_TIMING_DETAILS = 0,
   CTL_GENLOCK_OPERATION_VALIDATE = 1,
   CTL_GENLOCK_OPERATION_ENABLE = 2,

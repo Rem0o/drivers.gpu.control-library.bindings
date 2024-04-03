@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_engine_group_t {
+public enum ctl_engine_group_t : uint {
   CTL_ENGINE_GROUP_GT = 0,
   CTL_ENGINE_GROUP_RENDER = 1,
   CTL_ENGINE_GROUP_MEDIA = 2,

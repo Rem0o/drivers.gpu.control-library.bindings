@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_psu_type_t {
+public enum ctl_psu_type_t : uint {
   CTL_PSU_TYPE_PSU_NONE = 0,
   CTL_PSU_TYPE_PSU_PCIE = 1,
   CTL_PSU_TYPE_PSU_6PIN = 2,

@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_set_operation_t {
+public enum ctl_set_operation_t : uint {
   CTL_SET_OPERATION_RESTORE_DEFAULT = 0,
   CTL_SET_OPERATION_CUSTOM = 1,
   CTL_SET_OPERATION_MAX

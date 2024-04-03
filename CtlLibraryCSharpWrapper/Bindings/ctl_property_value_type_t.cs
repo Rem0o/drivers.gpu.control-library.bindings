@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_property_value_type_t {
+public enum ctl_property_value_type_t : uint {
   CTL_PROPERTY_VALUE_TYPE_BOOL = 0,
   CTL_PROPERTY_VALUE_TYPE_FLOAT = 1,
   CTL_PROPERTY_VALUE_TYPE_INT32 = 2,

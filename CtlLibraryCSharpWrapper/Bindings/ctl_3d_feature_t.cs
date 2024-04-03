@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_3d_feature_t {
+public enum ctl_3d_feature_t : uint {
   CTL_3D_FEATURE_FRAME_PACING = 0,
   CTL_3D_FEATURE_ENDURANCE_GAMING = 1,
   CTL_3D_FEATURE_FRAME_LIMIT = 2,

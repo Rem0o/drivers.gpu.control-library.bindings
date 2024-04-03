@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_display_output_types_t {
+public enum ctl_display_output_types_t : uint {
   CTL_DISPLAY_OUTPUT_TYPES_INVALID = 0,
   CTL_DISPLAY_OUTPUT_TYPES_DISPLAYPORT = 1,
   CTL_DISPLAY_OUTPUT_TYPES_HDMI = 2,

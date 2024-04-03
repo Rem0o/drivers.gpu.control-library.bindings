@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_i2c_flag_t {
+public enum ctl_i2c_flag_t : uint {
   CTL_I2C_FLAG_ATOMICI2C = (1 << 0),
   CTL_I2C_FLAG_1BYTE_INDEX = (1 << 1),
   CTL_I2C_FLAG_2BYTE_INDEX = (1 << 2),
@@ -18,7 +18,7 @@ public enum ctl_i2c_flag_t {
   CTL_I2C_FLAG_SPEED_SLOW = (1 << 4),
   CTL_I2C_FLAG_SPEED_FAST = (1 << 5),
   CTL_I2C_FLAG_SPEED_BIT_BASH = (1 << 6),
-  CTL_I2C_FLAG_MAX = (1 << 31)
+  CTL_I2C_FLAG_MAX = 0x80000000
 }
 
 }

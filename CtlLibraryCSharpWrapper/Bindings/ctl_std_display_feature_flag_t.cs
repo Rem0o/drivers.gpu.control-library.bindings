@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_std_display_feature_flag_t {
+public enum ctl_std_display_feature_flag_t : uint {
   CTL_STD_DISPLAY_FEATURE_FLAG_HDCP = (1 << 0),
   CTL_STD_DISPLAY_FEATURE_FLAG_HD_AUDIO = (1 << 1),
   CTL_STD_DISPLAY_FEATURE_FLAG_PSR = (1 << 2),
@@ -20,7 +20,7 @@ public enum ctl_std_display_feature_flag_t {
   CTL_STD_DISPLAY_FEATURE_FLAG_HDMI_QMS = (1 << 6),
   CTL_STD_DISPLAY_FEATURE_FLAG_HDR10_PLUS_CERTIFIED = (1 << 7),
   CTL_STD_DISPLAY_FEATURE_FLAG_VESA_HDR_CERTIFIED = (1 << 8),
-  CTL_STD_DISPLAY_FEATURE_FLAG_MAX = (1 << 31)
+  CTL_STD_DISPLAY_FEATURE_FLAG_MAX = 0x80000000
 }
 
 }

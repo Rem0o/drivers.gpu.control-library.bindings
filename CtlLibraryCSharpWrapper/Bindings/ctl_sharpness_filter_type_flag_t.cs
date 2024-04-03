@@ -10,10 +10,10 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_sharpness_filter_type_flag_t {
+public enum ctl_sharpness_filter_type_flag_t : uint {
   CTL_SHARPNESS_FILTER_TYPE_FLAG_NON_ADAPTIVE = (1 << 0),
   CTL_SHARPNESS_FILTER_TYPE_FLAG_ADAPTIVE = (1 << 1),
-  CTL_SHARPNESS_FILTER_TYPE_FLAG_MAX = (1 << 31)
+  CTL_SHARPNESS_FILTER_TYPE_FLAG_MAX = 0x80000000
 }
 
 }

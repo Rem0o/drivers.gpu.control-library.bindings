@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_temp_sensors_t {
+public enum ctl_temp_sensors_t : uint {
   CTL_TEMP_SENSORS_GLOBAL = 0,
   CTL_TEMP_SENSORS_GPU = 1,
   CTL_TEMP_SENSORS_MEMORY = 2,

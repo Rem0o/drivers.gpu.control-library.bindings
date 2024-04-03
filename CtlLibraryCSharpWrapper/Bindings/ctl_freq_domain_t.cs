@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_freq_domain_t {
+public enum ctl_freq_domain_t : uint {
   CTL_FREQ_DOMAIN_GPU = 0,
   CTL_FREQ_DOMAIN_MEMORY = 1,
   CTL_FREQ_DOMAIN_MAX

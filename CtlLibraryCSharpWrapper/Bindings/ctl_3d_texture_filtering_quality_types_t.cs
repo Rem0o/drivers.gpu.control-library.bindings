@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_3d_texture_filtering_quality_types_t {
+public enum ctl_3d_texture_filtering_quality_types_t : uint {
   CTL_3D_TEXTURE_FILTERING_QUALITY_TYPES_PERFORMANCE = 0,
   CTL_3D_TEXTURE_FILTERING_QUALITY_TYPES_BALANCED = 1,
   CTL_3D_TEXTURE_FILTERING_QUALITY_TYPES_QUALITY = 2,

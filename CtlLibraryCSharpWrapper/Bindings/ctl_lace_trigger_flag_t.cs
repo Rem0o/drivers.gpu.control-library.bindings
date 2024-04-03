@@ -10,10 +10,10 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_lace_trigger_flag_t {
+public enum ctl_lace_trigger_flag_t : uint {
   CTL_LACE_TRIGGER_FLAG_AMBIENT_LIGHT = (1 << 0),
   CTL_LACE_TRIGGER_FLAG_FIXED_AGGRESSIVENESS = (1 << 1),
-  CTL_LACE_TRIGGER_FLAG_MAX = (1 << 31)
+  CTL_LACE_TRIGGER_FLAG_MAX = 0x80000000
 }
 
 }

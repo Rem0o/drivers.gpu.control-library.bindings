@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_display_setting_low_latency_t {
+public enum ctl_display_setting_low_latency_t : uint {
   CTL_DISPLAY_SETTING_LOW_LATENCY_DEFAULT = 0,
   CTL_DISPLAY_SETTING_LOW_LATENCY_DISABLED = 1,
   CTL_DISPLAY_SETTING_LOW_LATENCY_ENABLED = 2,

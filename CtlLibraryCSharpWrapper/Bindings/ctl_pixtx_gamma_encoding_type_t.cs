@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_pixtx_gamma_encoding_type_t {
+public enum ctl_pixtx_gamma_encoding_type_t : uint {
   CTL_PIXTX_GAMMA_ENCODING_TYPE_SRGB = 0,
   CTL_PIXTX_GAMMA_ENCODING_TYPE_REC709 = 1,
   CTL_PIXTX_GAMMA_ENCODING_TYPE_ST2084 = 2,

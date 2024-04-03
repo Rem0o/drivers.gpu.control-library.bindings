@@ -11,4 +11,8 @@
     <Folder Include="Bindings\" />
   </ItemGroup>
 
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="powershell.exe -File Scripts\enum_uint.ps1" />
+  </Target>
+
 </Project>

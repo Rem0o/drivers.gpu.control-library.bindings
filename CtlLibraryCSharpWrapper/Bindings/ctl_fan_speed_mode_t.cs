@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_fan_speed_mode_t {
+public enum ctl_fan_speed_mode_t : uint {
   CTL_FAN_SPEED_MODE_DEFAULT = 0,
   CTL_FAN_SPEED_MODE_FIXED = 1,
   CTL_FAN_SPEED_MODE_TABLE = 2,

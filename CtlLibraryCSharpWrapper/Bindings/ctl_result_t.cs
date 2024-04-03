@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_result_t {
+public enum ctl_result_t : uint {
   CTL_RESULT_SUCCESS = 0x00000000,
   CTL_RESULT_SUCCESS_STILL_OPEN_BY_ANOTHER_CALLER = 0x00000001,
   CTL_RESULT_ERROR_SUCCESS_END = 0x0000FFFF,

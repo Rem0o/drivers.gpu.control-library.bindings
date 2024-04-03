@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_display_setting_content_type_t {
+public enum ctl_display_setting_content_type_t : uint {
   CTL_DISPLAY_SETTING_CONTENT_TYPE_DEFAULT = 0,
   CTL_DISPLAY_SETTING_CONTENT_TYPE_DISABLED = 1,
   CTL_DISPLAY_SETTING_CONTENT_TYPE_DESKTOP = 2,

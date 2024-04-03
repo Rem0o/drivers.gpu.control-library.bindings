@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_display_setting_sourcetm_t {
+public enum ctl_display_setting_sourcetm_t : uint {
   CTL_DISPLAY_SETTING_SOURCETM_DEFAULT = 0,
   CTL_DISPLAY_SETTING_SOURCETM_DISABLED = 1,
   CTL_DISPLAY_SETTING_SOURCETM_ENABLED = 2,

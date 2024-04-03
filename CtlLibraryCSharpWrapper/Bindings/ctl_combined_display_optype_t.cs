@@ -10,7 +10,7 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_combined_display_optype_t {
+public enum ctl_combined_display_optype_t : uint {
   CTL_COMBINED_DISPLAY_OPTYPE_IS_SUPPORTED_CONFIG = 1,
   CTL_COMBINED_DISPLAY_OPTYPE_ENABLE = 2,
   CTL_COMBINED_DISPLAY_OPTYPE_DISABLE = 3,
