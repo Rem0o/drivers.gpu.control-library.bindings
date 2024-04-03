@@ -27,10 +27,12 @@ typedef     uint32_t        ctlapi_uint32;
 typedef     ctlapi_uint32   ctlapi_uint;
 
 %include stdint.i
-%include carrays.i
 %include windows.i
 %include typemaps.i
+%include carrays.i
 %include cpointer.i
+// use the following to have int indexes instead of uint (size_t)
+%apply int { size_t nelements, size_t index }
 
 %include "../../drivers.gpu.control-library/Include/igcl_api.h"
 %include "../../drivers.gpu.control-library/Source/cApiWrapper.cpp"
