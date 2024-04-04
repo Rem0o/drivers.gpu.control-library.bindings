@@ -102,7 +102,6 @@ TYPE2 NAME(TYPE1 x) {
 %}
 %enddef
 
-
 %pointer_functions(ctl_init_args_t, ctl_init_args_t_Ptr);
 %pointer_functions(ctllibrary_uint, unsigned_int_Ptr);
 %pointer_functions(int, int_Ptr);

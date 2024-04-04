@@ -3,13 +3,13 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="CtlApiCSharpBind_wrap.cxx" />
+    <ClCompile Include="CtlLibraryCSharpBind_wrap.cxx" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="CtlApiCSharpBind.i" />
+    <CustomBuild Include="CtlLibraryCSharpBind.i" />
   </ItemGroup>
 </Project>
