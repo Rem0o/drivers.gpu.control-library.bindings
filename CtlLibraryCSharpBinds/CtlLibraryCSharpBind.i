@@ -23,9 +23,6 @@ typedef     ctllibrary_uint32   ctllibrary_uint;
 
 %}
 
-typedef     uint32_t        ctllibrary_uint32;
-typedef     ctllibrary_uint32   ctllibrary_uint;
-
 %include stdint.i
 %include windows.i
 %include typemaps.i
@@ -103,7 +100,7 @@ TYPE2 NAME(TYPE1 x) {
 %enddef
 
 %pointer_functions(ctl_init_args_t, ctl_init_args_t_Ptr);
-%pointer_functions(ctllibrary_uint, unsigned_int_Ptr);
+%pointer_functions(uint32_t, unsigned_int_Ptr);
 %pointer_functions(int, int_Ptr);
 %pointer_functions(double, double_Ptr);
 %ppointer_functions(ctl_api_handle_t, ctl_api_handle_t_PtrPtr);

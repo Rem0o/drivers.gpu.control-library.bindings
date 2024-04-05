@@ -1,4 +1,7 @@
-﻿public class CompositeDisposable : IDisposable
+﻿using System;
+using System.Collections.Generic;
+
+public class CompositeDisposable : IDisposable
 {
     private List<IDisposable> _disposables = new List<IDisposable>();
 

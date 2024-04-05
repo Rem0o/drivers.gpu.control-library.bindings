@@ -1,4 +1,6 @@
-﻿public class DisposeAction : IDisposable
+﻿using System;
+
+public class DisposeAction : IDisposable
 {
     private Action _disposeAction;
 
