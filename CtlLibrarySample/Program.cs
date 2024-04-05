@@ -68,10 +68,9 @@ internal class Program
             CtlLibrary.ctlClose(apiHandle).ThrowIfError("Close");
         }
 
-
         static SWIGTYPE_p__ctl_api_handle_t GetApiHandle(CompositeDisposable disposable)
         {
-            ctl_init_args_t initArgs = CtlLibrary.create_Init_Args().DisposeWith(disposable);
+            var initArgs = CtlLibrary.create_Init_Args().DisposeWith(disposable);
             var handlePtr = CtlLibrary.new_ctl_api_handle_t_PtrPtr().DisposeWith(disposable, CtlLibrary.delete_ctl_api_handle_t_PtrPtr);
 
             CtlLibrary.ctlInit(initArgs, handlePtr).ThrowIfError("Init");

@@ -11,7 +11,6 @@ namespace CtlLibraryCSharpWrapper
             using (var disposable = new CompositeDisposable())
             {
                 var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
-                CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0);
                 var emptyDeviceArrayPtr = CtlLibrary.new_ctl_device_adapter_handle_t_PtrPtr().DisposeWith(disposable, CtlLibrary.delete_ctl_device_adapter_handle_t_PtrPtr);
 
                 CtlLibrary.ctlEnumerateDevices(apiHandle, uintPtr, emptyDeviceArrayPtr).ThrowIfError("Enumerate devices (n)");
