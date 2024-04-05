@@ -15,6 +15,7 @@ internal class Program
         {
             var devices = CtlLibraryHelpers.GetDevices(apiHandle);
             Console.WriteLine($"Found {devices.Length} cards");
+
             // SET SPEED
 
             var speed = new ctl_fan_speed_t
@@ -26,9 +27,9 @@ internal class Program
             var fanHandles = devices.SelectMany(d => CtlLibraryHelpers.GetFanHandles(d)).ToArray();
             Console.WriteLine($"Found {fanHandles.Length} fans");
 
-            const int N = 10;
             if (fanHandles.Length > 0)
             {
+                const int N = 10;
                 foreach (var percent in Enumerable.Range(0, N + 1).Select(x => x * 10).Reverse())
                 {
                     speed.speed = percent;
