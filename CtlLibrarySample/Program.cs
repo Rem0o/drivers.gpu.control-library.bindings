@@ -93,7 +93,7 @@ internal class Program
         static void GetTemperatures(CompositeDisposable disposable, SWIGTYPE_p__ctl_device_adapter_handle_t device)
         {
             var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
-            CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0);
+            CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
 
             var emptyTempArrayPtr = CtlLibrary.new_ctl_temp_handle_t_PtrPtr().DisposeWith(disposable, CtlLibrary.delete_ctl_temp_handle_t_PtrPtr);
             CtlLibrary.ctlEnumTemperatureSensors(device, uintPtr, emptyTempArrayPtr).ThrowIfError("Enumerate temperature sensors (n)");
