@@ -50,7 +50,7 @@ typedef     ctllibrary_uint32   ctllibrary_uint;
   ctl_init_args_t create_Init_Args() {
     ctl_init_args_t CtlInitArgs;
     CtlInitArgs.AppVersion = CTL_MAKE_VERSION(CTL_IMPL_MAJOR_VERSION, CTL_IMPL_MINOR_VERSION);
-    CtlInitArgs.flags      = 0; // CTL_INIT_FLAG_USE_LEVEL_ZERO;
+    CtlInitArgs.flags      = CTL_INIT_FLAG_USE_LEVEL_ZERO;
     CtlInitArgs.Size       = sizeof(CtlInitArgs);
     CtlInitArgs.Version    = 0;
     // Init App UID appropriately
