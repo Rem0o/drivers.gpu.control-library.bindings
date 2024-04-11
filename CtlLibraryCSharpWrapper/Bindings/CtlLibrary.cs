@@ -570,15 +570,6 @@ public class CtlLibrary {
     return ret;
   }
 
-  public static uint size_of_ctl_init_args_t() {
-    uint ret = CtlLibraryPINVOKE.size_of_ctl_init_args_t();
-    return ret;
-  }
-
-  public static void zero_memory_application_id(ctl_application_id_t memory) {
-    CtlLibraryPINVOKE.zero_memory_application_id(ctl_application_id_t.getCPtr(memory));
-  }
-
   public static ctl_init_args_t create_Init_Args() {
     ctl_init_args_t ret = new ctl_init_args_t(CtlLibraryPINVOKE.create_Init_Args(), true);
     return ret;
@@ -686,106 +677,106 @@ public class CtlLibrary {
     return ret;
   }
 
-  public static SWIGTYPE_p_p__ctl_api_handle_t new_ctl_api_handle_t_PtrPtr() {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.new_ctl_api_handle_t_PtrPtr();
+  public static SWIGTYPE_p_p__ctl_api_handle_t new_ctl_api_handle_t_Ptr() {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.new_ctl_api_handle_t_Ptr();
     SWIGTYPE_p_p__ctl_api_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p__ctl_api_handle_t(cPtr, false);
     return ret;
   }
 
-  public static SWIGTYPE_p_p__ctl_api_handle_t copy_ctl_api_handle_t_PtrPtr(SWIGTYPE_p__ctl_api_handle_t value) {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.copy_ctl_api_handle_t_PtrPtr(SWIGTYPE_p__ctl_api_handle_t.getCPtr(value));
+  public static SWIGTYPE_p_p__ctl_api_handle_t copy_ctl_api_handle_t_Ptr(SWIGTYPE_p__ctl_api_handle_t value) {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.copy_ctl_api_handle_t_Ptr(SWIGTYPE_p__ctl_api_handle_t.getCPtr(value));
     SWIGTYPE_p_p__ctl_api_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p__ctl_api_handle_t(cPtr, false);
     return ret;
   }
 
-  public static void delete_ctl_api_handle_t_PtrPtr(SWIGTYPE_p_p__ctl_api_handle_t obj) {
-    CtlLibraryPINVOKE.delete_ctl_api_handle_t_PtrPtr(SWIGTYPE_p_p__ctl_api_handle_t.getCPtr(obj));
+  public static void delete_ctl_api_handle_t_Ptr(SWIGTYPE_p_p__ctl_api_handle_t obj) {
+    CtlLibraryPINVOKE.delete_ctl_api_handle_t_Ptr(SWIGTYPE_p_p__ctl_api_handle_t.getCPtr(obj));
   }
 
-  public static void ctl_api_handle_t_PtrPtr_assign(SWIGTYPE_p_p__ctl_api_handle_t obj, SWIGTYPE_p__ctl_api_handle_t value) {
-    CtlLibraryPINVOKE.ctl_api_handle_t_PtrPtr_assign(SWIGTYPE_p_p__ctl_api_handle_t.getCPtr(obj), SWIGTYPE_p__ctl_api_handle_t.getCPtr(value));
+  public static void ctl_api_handle_t_Ptr_assign(SWIGTYPE_p_p__ctl_api_handle_t obj, SWIGTYPE_p__ctl_api_handle_t value) {
+    CtlLibraryPINVOKE.ctl_api_handle_t_Ptr_assign(SWIGTYPE_p_p__ctl_api_handle_t.getCPtr(obj), SWIGTYPE_p__ctl_api_handle_t.getCPtr(value));
   }
 
-  public static SWIGTYPE_p__ctl_api_handle_t ctl_api_handle_t_PtrPtr_value(SWIGTYPE_p_p__ctl_api_handle_t obj) {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_api_handle_t_PtrPtr_value(SWIGTYPE_p_p__ctl_api_handle_t.getCPtr(obj));
+  public static SWIGTYPE_p__ctl_api_handle_t ctl_api_handle_t_Ptr_value(SWIGTYPE_p_p__ctl_api_handle_t obj) {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_api_handle_t_Ptr_value(SWIGTYPE_p_p__ctl_api_handle_t.getCPtr(obj));
     SWIGTYPE_p__ctl_api_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p__ctl_api_handle_t(cPtr, false);
     return ret;
   }
 
-  public static SWIGTYPE_p_p__ctl_device_adapter_handle_t new_ctl_device_adapter_handle_t_PtrPtr() {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.new_ctl_device_adapter_handle_t_PtrPtr();
+  public static SWIGTYPE_p_p__ctl_device_adapter_handle_t new_ctl_device_adapter_handle_t_Ptr() {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.new_ctl_device_adapter_handle_t_Ptr();
     SWIGTYPE_p_p__ctl_device_adapter_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p__ctl_device_adapter_handle_t(cPtr, false);
     return ret;
   }
 
-  public static SWIGTYPE_p_p__ctl_device_adapter_handle_t copy_ctl_device_adapter_handle_t_PtrPtr(SWIGTYPE_p__ctl_device_adapter_handle_t value) {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.copy_ctl_device_adapter_handle_t_PtrPtr(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(value));
+  public static SWIGTYPE_p_p__ctl_device_adapter_handle_t copy_ctl_device_adapter_handle_t_Ptr(SWIGTYPE_p__ctl_device_adapter_handle_t value) {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.copy_ctl_device_adapter_handle_t_Ptr(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(value));
     SWIGTYPE_p_p__ctl_device_adapter_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p__ctl_device_adapter_handle_t(cPtr, false);
     return ret;
   }
 
-  public static void delete_ctl_device_adapter_handle_t_PtrPtr(SWIGTYPE_p_p__ctl_device_adapter_handle_t obj) {
-    CtlLibraryPINVOKE.delete_ctl_device_adapter_handle_t_PtrPtr(SWIGTYPE_p_p__ctl_device_adapter_handle_t.getCPtr(obj));
+  public static void delete_ctl_device_adapter_handle_t_Ptr(SWIGTYPE_p_p__ctl_device_adapter_handle_t obj) {
+    CtlLibraryPINVOKE.delete_ctl_device_adapter_handle_t_Ptr(SWIGTYPE_p_p__ctl_device_adapter_handle_t.getCPtr(obj));
   }
 
-  public static void ctl_device_adapter_handle_t_PtrPtr_assign(SWIGTYPE_p_p__ctl_device_adapter_handle_t obj, SWIGTYPE_p__ctl_device_adapter_handle_t value) {
-    CtlLibraryPINVOKE.ctl_device_adapter_handle_t_PtrPtr_assign(SWIGTYPE_p_p__ctl_device_adapter_handle_t.getCPtr(obj), SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(value));
+  public static void ctl_device_adapter_handle_t_Ptr_assign(SWIGTYPE_p_p__ctl_device_adapter_handle_t obj, SWIGTYPE_p__ctl_device_adapter_handle_t value) {
+    CtlLibraryPINVOKE.ctl_device_adapter_handle_t_Ptr_assign(SWIGTYPE_p_p__ctl_device_adapter_handle_t.getCPtr(obj), SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(value));
   }
 
-  public static SWIGTYPE_p__ctl_device_adapter_handle_t ctl_device_adapter_handle_t_PtrPtr_value(SWIGTYPE_p_p__ctl_device_adapter_handle_t obj) {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_device_adapter_handle_t_PtrPtr_value(SWIGTYPE_p_p__ctl_device_adapter_handle_t.getCPtr(obj));
+  public static SWIGTYPE_p__ctl_device_adapter_handle_t ctl_device_adapter_handle_t_Ptr_value(SWIGTYPE_p_p__ctl_device_adapter_handle_t obj) {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_device_adapter_handle_t_Ptr_value(SWIGTYPE_p_p__ctl_device_adapter_handle_t.getCPtr(obj));
     SWIGTYPE_p__ctl_device_adapter_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p__ctl_device_adapter_handle_t(cPtr, false);
     return ret;
   }
 
-  public static SWIGTYPE_p_p__ctl_temp_handle_t new_ctl_temp_handle_t_PtrPtr() {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.new_ctl_temp_handle_t_PtrPtr();
+  public static SWIGTYPE_p_p__ctl_temp_handle_t new_ctl_temp_handle_t_Ptr() {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.new_ctl_temp_handle_t_Ptr();
     SWIGTYPE_p_p__ctl_temp_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p__ctl_temp_handle_t(cPtr, false);
     return ret;
   }
 
-  public static SWIGTYPE_p_p__ctl_temp_handle_t copy_ctl_temp_handle_t_PtrPtr(SWIGTYPE_p__ctl_temp_handle_t value) {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.copy_ctl_temp_handle_t_PtrPtr(SWIGTYPE_p__ctl_temp_handle_t.getCPtr(value));
+  public static SWIGTYPE_p_p__ctl_temp_handle_t copy_ctl_temp_handle_t_Ptr(SWIGTYPE_p__ctl_temp_handle_t value) {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.copy_ctl_temp_handle_t_Ptr(SWIGTYPE_p__ctl_temp_handle_t.getCPtr(value));
     SWIGTYPE_p_p__ctl_temp_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p__ctl_temp_handle_t(cPtr, false);
     return ret;
   }
 
-  public static void delete_ctl_temp_handle_t_PtrPtr(SWIGTYPE_p_p__ctl_temp_handle_t obj) {
-    CtlLibraryPINVOKE.delete_ctl_temp_handle_t_PtrPtr(SWIGTYPE_p_p__ctl_temp_handle_t.getCPtr(obj));
+  public static void delete_ctl_temp_handle_t_Ptr(SWIGTYPE_p_p__ctl_temp_handle_t obj) {
+    CtlLibraryPINVOKE.delete_ctl_temp_handle_t_Ptr(SWIGTYPE_p_p__ctl_temp_handle_t.getCPtr(obj));
   }
 
-  public static void ctl_temp_handle_t_PtrPtr_assign(SWIGTYPE_p_p__ctl_temp_handle_t obj, SWIGTYPE_p__ctl_temp_handle_t value) {
-    CtlLibraryPINVOKE.ctl_temp_handle_t_PtrPtr_assign(SWIGTYPE_p_p__ctl_temp_handle_t.getCPtr(obj), SWIGTYPE_p__ctl_temp_handle_t.getCPtr(value));
+  public static void ctl_temp_handle_t_Ptr_assign(SWIGTYPE_p_p__ctl_temp_handle_t obj, SWIGTYPE_p__ctl_temp_handle_t value) {
+    CtlLibraryPINVOKE.ctl_temp_handle_t_Ptr_assign(SWIGTYPE_p_p__ctl_temp_handle_t.getCPtr(obj), SWIGTYPE_p__ctl_temp_handle_t.getCPtr(value));
   }
 
-  public static SWIGTYPE_p__ctl_temp_handle_t ctl_temp_handle_t_PtrPtr_value(SWIGTYPE_p_p__ctl_temp_handle_t obj) {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_temp_handle_t_PtrPtr_value(SWIGTYPE_p_p__ctl_temp_handle_t.getCPtr(obj));
+  public static SWIGTYPE_p__ctl_temp_handle_t ctl_temp_handle_t_Ptr_value(SWIGTYPE_p_p__ctl_temp_handle_t obj) {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_temp_handle_t_Ptr_value(SWIGTYPE_p_p__ctl_temp_handle_t.getCPtr(obj));
     SWIGTYPE_p__ctl_temp_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p__ctl_temp_handle_t(cPtr, false);
     return ret;
   }
 
-  public static SWIGTYPE_p_p__ctl_fan_handle_t new_ctl_fan_handle_t_PtrPtr() {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.new_ctl_fan_handle_t_PtrPtr();
+  public static SWIGTYPE_p_p__ctl_fan_handle_t new_ctl_fan_handle_t_Ptr() {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.new_ctl_fan_handle_t_Ptr();
     SWIGTYPE_p_p__ctl_fan_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p__ctl_fan_handle_t(cPtr, false);
     return ret;
   }
 
-  public static SWIGTYPE_p_p__ctl_fan_handle_t copy_ctl_fan_handle_t_PtrPtr(SWIGTYPE_p__ctl_fan_handle_t value) {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.copy_ctl_fan_handle_t_PtrPtr(SWIGTYPE_p__ctl_fan_handle_t.getCPtr(value));
+  public static SWIGTYPE_p_p__ctl_fan_handle_t copy_ctl_fan_handle_t_Ptr(SWIGTYPE_p__ctl_fan_handle_t value) {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.copy_ctl_fan_handle_t_Ptr(SWIGTYPE_p__ctl_fan_handle_t.getCPtr(value));
     SWIGTYPE_p_p__ctl_fan_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_p__ctl_fan_handle_t(cPtr, false);
     return ret;
   }
 
-  public static void delete_ctl_fan_handle_t_PtrPtr(SWIGTYPE_p_p__ctl_fan_handle_t obj) {
-    CtlLibraryPINVOKE.delete_ctl_fan_handle_t_PtrPtr(SWIGTYPE_p_p__ctl_fan_handle_t.getCPtr(obj));
+  public static void delete_ctl_fan_handle_t_Ptr(SWIGTYPE_p_p__ctl_fan_handle_t obj) {
+    CtlLibraryPINVOKE.delete_ctl_fan_handle_t_Ptr(SWIGTYPE_p_p__ctl_fan_handle_t.getCPtr(obj));
   }
 
-  public static void ctl_fan_handle_t_PtrPtr_assign(SWIGTYPE_p_p__ctl_fan_handle_t obj, SWIGTYPE_p__ctl_fan_handle_t value) {
-    CtlLibraryPINVOKE.ctl_fan_handle_t_PtrPtr_assign(SWIGTYPE_p_p__ctl_fan_handle_t.getCPtr(obj), SWIGTYPE_p__ctl_fan_handle_t.getCPtr(value));
+  public static void ctl_fan_handle_t_Ptr_assign(SWIGTYPE_p_p__ctl_fan_handle_t obj, SWIGTYPE_p__ctl_fan_handle_t value) {
+    CtlLibraryPINVOKE.ctl_fan_handle_t_Ptr_assign(SWIGTYPE_p_p__ctl_fan_handle_t.getCPtr(obj), SWIGTYPE_p__ctl_fan_handle_t.getCPtr(value));
   }
 
-  public static SWIGTYPE_p__ctl_fan_handle_t ctl_fan_handle_t_PtrPtr_value(SWIGTYPE_p_p__ctl_fan_handle_t obj) {
-    global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_fan_handle_t_PtrPtr_value(SWIGTYPE_p_p__ctl_fan_handle_t.getCPtr(obj));
+  public static SWIGTYPE_p__ctl_fan_handle_t ctl_fan_handle_t_Ptr_value(SWIGTYPE_p_p__ctl_fan_handle_t obj) {
+    global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_fan_handle_t_Ptr_value(SWIGTYPE_p_p__ctl_fan_handle_t.getCPtr(obj));
     SWIGTYPE_p__ctl_fan_handle_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p__ctl_fan_handle_t(cPtr, false);
     return ret;
   }

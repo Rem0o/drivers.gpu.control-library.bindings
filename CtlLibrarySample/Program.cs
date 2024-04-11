@@ -72,10 +72,10 @@ internal class Program
         static SWIGTYPE_p__ctl_api_handle_t GetApiHandle(CompositeDisposable disposable)
         {
             var initArgs = CtlLibrary.create_Init_Args().DisposeWith(disposable);
-            var handlePtr = CtlLibrary.new_ctl_api_handle_t_PtrPtr().DisposeWith(disposable, CtlLibrary.delete_ctl_api_handle_t_PtrPtr);
+            var handlePtr = CtlLibrary.new_ctl_api_handle_t_Ptr().DisposeWith(disposable, CtlLibrary.delete_ctl_api_handle_t_Ptr);
 
             CtlLibrary.ctlInit(initArgs, handlePtr).ThrowIfError("Init");
-            var apiHandle = CtlLibrary.ctl_api_handle_t_PtrPtr_value(handlePtr);
+            var apiHandle = CtlLibrary.ctl_api_handle_t_Ptr_value(handlePtr);
 
             return apiHandle;
         }
@@ -96,7 +96,7 @@ internal class Program
             var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
             CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
 
-            var emptyTempArrayPtr = CtlLibrary.new_ctl_temp_handle_t_PtrPtr().DisposeWith(disposable, CtlLibrary.delete_ctl_temp_handle_t_PtrPtr);
+            var emptyTempArrayPtr = CtlLibrary.new_ctl_temp_handle_t_Ptr().DisposeWith(disposable, CtlLibrary.delete_ctl_temp_handle_t_Ptr);
             CtlLibrary.ctlEnumTemperatureSensors(device, uintPtr, emptyTempArrayPtr).ThrowIfError("Enumerate temperature sensors (n)");
             int n = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
 

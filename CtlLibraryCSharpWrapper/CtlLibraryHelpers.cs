@@ -12,7 +12,7 @@ namespace CtlLibraryCSharpWrapper
             {
                 var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
                 CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
-                var emptyDeviceArrayPtr = CtlLibrary.new_ctl_device_adapter_handle_t_PtrPtr().DisposeWith(disposable, CtlLibrary.delete_ctl_device_adapter_handle_t_PtrPtr);
+                var emptyDeviceArrayPtr = CtlLibrary.new_ctl_device_adapter_handle_t_Ptr().DisposeWith(disposable, CtlLibrary.delete_ctl_device_adapter_handle_t_Ptr);
 
                 CtlLibrary.ctlEnumerateDevices(apiHandle, uintPtr, emptyDeviceArrayPtr).ThrowIfError("Enumerate devices (n)");
                 var n = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
@@ -31,7 +31,7 @@ namespace CtlLibraryCSharpWrapper
                 var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
                 CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
 
-                var emptyArrayPtr = CtlLibrary.new_ctl_fan_handle_t_PtrPtr().DisposeWith(disposable, CtlLibrary.delete_ctl_fan_handle_t_PtrPtr);
+                var emptyArrayPtr = CtlLibrary.new_ctl_fan_handle_t_Ptr().DisposeWith(disposable, CtlLibrary.delete_ctl_fan_handle_t_Ptr);
                 CtlLibrary.ctlEnumFans(device, uintPtr, emptyArrayPtr).ThrowIfError("Fan handles (n)");
                 int n = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
 
