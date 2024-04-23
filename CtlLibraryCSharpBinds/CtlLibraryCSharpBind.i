@@ -44,11 +44,6 @@ TYPE2 NAME(TYPE1 x) {
 %pointer_functions(double, double_Ptr);
 %pointer_functions(ctl_api_handle_t, ctl_api_handle_t_Ptr);
 
-%pointer_functions(ctl_device_adapter_handle_t, ctl_device_adapter_handle_t_Ptr);
 %array_class(ctl_device_adapter_handle_t, DeviceAdapterHandleArray);
-
-%pointer_functions(ctl_temp_handle_t, ctl_temp_handle_t_Ptr);
 %array_class(ctl_temp_handle_t, TempHandleArray);
-
-%pointer_functions(ctl_fan_handle_t, ctl_fan_handle_t_Ptr);
 %array_class(ctl_fan_handle_t, FanHandleArray);

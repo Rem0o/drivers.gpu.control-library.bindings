@@ -6265,21 +6265,6 @@ class CtlLibraryPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_api_handle_t_Ptr_value")]
   public static extern global::System.IntPtr ctl_api_handle_t_Ptr_value(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_new_ctl_device_adapter_handle_t_Ptr")]
-  public static extern global::System.IntPtr new_ctl_device_adapter_handle_t_Ptr();
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_copy_ctl_device_adapter_handle_t_Ptr")]
-  public static extern global::System.IntPtr copy_ctl_device_adapter_handle_t_Ptr(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_delete_ctl_device_adapter_handle_t_Ptr")]
-  public static extern void delete_ctl_device_adapter_handle_t_Ptr(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_device_adapter_handle_t_Ptr_assign")]
-  public static extern void ctl_device_adapter_handle_t_Ptr_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_device_adapter_handle_t_Ptr_value")]
-  public static extern global::System.IntPtr ctl_device_adapter_handle_t_Ptr_value(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_new_DeviceAdapterHandleArray")]
   public static extern global::System.IntPtr new_DeviceAdapterHandleArray(int jarg1);
 
@@ -6298,21 +6283,6 @@ class CtlLibraryPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_DeviceAdapterHandleArray_frompointer")]
   public static extern global::System.IntPtr DeviceAdapterHandleArray_frompointer(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_new_ctl_temp_handle_t_Ptr")]
-  public static extern global::System.IntPtr new_ctl_temp_handle_t_Ptr();
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_copy_ctl_temp_handle_t_Ptr")]
-  public static extern global::System.IntPtr copy_ctl_temp_handle_t_Ptr(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_delete_ctl_temp_handle_t_Ptr")]
-  public static extern void delete_ctl_temp_handle_t_Ptr(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_temp_handle_t_Ptr_assign")]
-  public static extern void ctl_temp_handle_t_Ptr_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_temp_handle_t_Ptr_value")]
-  public static extern global::System.IntPtr ctl_temp_handle_t_Ptr_value(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_new_TempHandleArray")]
   public static extern global::System.IntPtr new_TempHandleArray(int jarg1);
 
@@ -6330,21 +6300,6 @@ class CtlLibraryPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_TempHandleArray_frompointer")]
   public static extern global::System.IntPtr TempHandleArray_frompointer(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_new_ctl_fan_handle_t_Ptr")]
-  public static extern global::System.IntPtr new_ctl_fan_handle_t_Ptr();
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_copy_ctl_fan_handle_t_Ptr")]
-  public static extern global::System.IntPtr copy_ctl_fan_handle_t_Ptr(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_delete_ctl_fan_handle_t_Ptr")]
-  public static extern void delete_ctl_fan_handle_t_Ptr(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_fan_handle_t_Ptr_assign")]
-  public static extern void ctl_fan_handle_t_Ptr_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_fan_handle_t_Ptr_value")]
-  public static extern global::System.IntPtr ctl_fan_handle_t_Ptr_value(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_new_FanHandleArray")]
   public static extern global::System.IntPtr new_FanHandleArray(int jarg1);

@@ -99,8 +99,8 @@ internal class Program
         var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
         CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
 
-        var emptyTempArrayPtr = CtlLibrary.new_ctl_temp_handle_t_Ptr().DisposeWith(disposable, CtlLibrary.delete_ctl_temp_handle_t_Ptr);
-        CtlLibrary.ctlEnumTemperatureSensors(device, uintPtr, emptyTempArrayPtr).ThrowIfError("Enumerate temperature sensors (n)");
+        var emptyTempArray = new TempHandleArray(0).DisposeWith(disposable);
+        CtlLibrary.ctlEnumTemperatureSensors(device, uintPtr, emptyTempArray.cast()).ThrowIfError("Enumerate temperature sensors (n)");
         int n = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
 
         var tempArray = new TempHandleArray(n).DisposeWith(disposable);
