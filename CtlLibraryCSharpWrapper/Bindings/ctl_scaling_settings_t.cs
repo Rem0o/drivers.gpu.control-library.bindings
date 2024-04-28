@@ -127,6 +127,16 @@ public class ctl_scaling_settings_t : global::System.IDisposable {
     } 
   }
 
+  public uint PreferredScalingType {
+    set {
+      CtlLibraryPINVOKE.ctl_scaling_settings_t_PreferredScalingType_set(swigCPtr, value);
+    } 
+    get {
+      uint ret = CtlLibraryPINVOKE.ctl_scaling_settings_t_PreferredScalingType_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public ctl_scaling_settings_t() : this(CtlLibraryPINVOKE.new_ctl_scaling_settings_t(), true) {
   }
 

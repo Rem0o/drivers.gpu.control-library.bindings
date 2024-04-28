@@ -3070,6 +3070,12 @@ class CtlLibraryPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_scaling_settings_t_HardwareModeSet_get")]
   public static extern bool ctl_scaling_settings_t_HardwareModeSet_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_scaling_settings_t_PreferredScalingType_set")]
+  public static extern void ctl_scaling_settings_t_PreferredScalingType_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_ctl_scaling_settings_t_PreferredScalingType_get")]
+  public static extern uint ctl_scaling_settings_t_PreferredScalingType_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_new_ctl_scaling_settings_t")]
   public static extern global::System.IntPtr new_ctl_scaling_settings_t();
 

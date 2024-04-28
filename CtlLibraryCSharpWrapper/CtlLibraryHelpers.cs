@@ -1,60 +1,58 @@
 ﻿using CtlLibraryBindings;
 using System;
-using System.Linq;
 
 namespace CtlLibraryCSharpWrapper
 {
     public static class CtlLibraryHelpers
     {
-        public static SWIGTYPE_p__ctl_device_adapter_handle_t[] GetDevices(SWIGTYPE_p__ctl_api_handle_t apiHandle)
+        public static ArrayWrapper<DeviceAdapterHandleArray> GetDevices(SWIGTYPE_p__ctl_api_handle_t apiHandle)
         {
-            using (var disposable = new CompositeDisposable())
-            {
-                var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
-                CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
-                var emptyDeviceArray = new DeviceAdapterHandleArray(0).DisposeWith(disposable);
+            using var disposable = new CompositeDisposable();
 
-                CtlLibrary.ctlEnumerateDevices(apiHandle, uintPtr, emptyDeviceArray.cast()).ThrowIfError("Enumerate devices (n)");
-                var n = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
+            var uintPtr = CtlLibrary.new_unsigned_int_Ptr();
+            CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
+            var emptyDeviceArray = ArrayWrapper.Create(0, n => new DeviceAdapterHandleArray(n)).DisposeWith(disposable);
 
-                var array = new DeviceAdapterHandleArray(n).DisposeWith(disposable);
-                CtlLibrary.ctlEnumerateDevices(apiHandle, uintPtr, array.cast()).ThrowIfError($"Enumerate devices ({n})"); ;
+            CtlLibrary.ctlEnumerateDevices(apiHandle, uintPtr, emptyDeviceArray.Value.cast()).ThrowIfError("Enumerate devices (n)");
+            var adapterCount = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
 
-                var devices = Enumerable.Range(0, n).Select(array.getitem).ToArray();
-                return devices;
-            }
-        }
-        public static SWIGTYPE_p__ctl_fan_handle_t[] GetFanHandles(SWIGTYPE_p__ctl_device_adapter_handle_t device)
-        {
-            using (var disposable = new CompositeDisposable())
-            {
-                var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
-                CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
+            var array = ArrayWrapper.Create(adapterCount, n => new DeviceAdapterHandleArray(n));
+            CtlLibrary.ctlEnumerateDevices(apiHandle, uintPtr, array.Value.cast()).ThrowIfError($"Enumerate devices ({adapterCount})"); ;
 
-                var emptyArray = new FanHandleArray(0).DisposeWith(disposable);
-                CtlLibrary.ctlEnumFans(device, uintPtr, emptyArray.cast()).ThrowIfError("Fan handles (n)");
-                int n = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
-
-                var fanArray = new FanHandleArray(n).DisposeWith(disposable);
-                CtlLibrary.ctlEnumFans(device, uintPtr, fanArray.cast()).ThrowIfError($"Fan handles ({n})");
-
-                return Enumerable.Range(0, n).Select(fanArray.getitem).ToArray();
-            }
+            return array;
         }
 
-        public static SWIGTYPE_p__ctl_temp_handle_t[] GetTempHandles(SWIGTYPE_p__ctl_device_adapter_handle_t handle)
+        public static ArrayWrapper<FanHandleArray> GetFanHandles(SWIGTYPE_p__ctl_device_adapter_handle_t device)
         {
-            using (var disposable = new CompositeDisposable())
-            {
-                var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
-                var _ = new TempHandleArray(0).cast();
-                CtlLibrary.ctlEnumTemperatureSensors(handle, uintPtr, _).ThrowIfError("Enumerate temperature sensors");
-                int n = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
-                var tempArray = new TempHandleArray(n);
-                CtlLibrary.ctlEnumTemperatureSensors(handle, uintPtr, tempArray.cast()).ThrowIfError("Enumerate temperature sensors");
+            using var disposable = new CompositeDisposable();
 
-                return Enumerable.Range(0, n).Select(tempArray.getitem).ToArray();
-            }
+            var uintPtr = CtlLibrary.new_unsigned_int_Ptr();
+            CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
+
+            var emptyArray = ArrayWrapper.Create(0, n => new FanHandleArray(n)).DisposeWith(disposable);
+            CtlLibrary.ctlEnumFans(device, uintPtr, emptyArray.Value.cast()).ThrowIfError("Fan handles (n)");
+            int fanCount = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
+
+            var fanArray = ArrayWrapper.Create(fanCount, n => new FanHandleArray(n));
+            CtlLibrary.ctlEnumFans(device, uintPtr, fanArray.Value.cast()).ThrowIfError($"Fan handles ({fanCount})");
+
+            return fanArray;
+        }
+
+        public static ArrayWrapper<TempHandleArray> GetTempHandles(SWIGTYPE_p__ctl_device_adapter_handle_t handle)
+        {
+            using var disposable = new CompositeDisposable();
+
+            var uintPtr = CtlLibrary.new_unsigned_int_Ptr().DisposeWith(disposable, CtlLibrary.delete_unsigned_int_Ptr);
+            CtlLibrary.unsigned_int_Ptr_assign(uintPtr, 0u);
+
+            var emptyArray = ArrayWrapper.Create(0, n => new TempHandleArray(n)).DisposeWith(disposable);
+            CtlLibrary.ctlEnumTemperatureSensors(handle, uintPtr, emptyArray.Value.cast()).ThrowIfError("Enumerate temperature sensors");
+            int tempCount = Convert.ToInt32(CtlLibrary.unsigned_int_Ptr_value(uintPtr));
+            var tempArray = ArrayWrapper.Create(tempCount, n => new TempHandleArray(n));
+            CtlLibrary.ctlEnumTemperatureSensors(handle, uintPtr, tempArray.Value.cast()).ThrowIfError("Enumerate temperature sensors");
+
+            return tempArray;
         }
     }
 }
