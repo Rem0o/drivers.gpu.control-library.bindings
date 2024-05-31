@@ -30,6 +30,21 @@
   }
 %}
 
+%define %setSizeInCtor(TYPE1)
+%extend TYPE1 {
+    TYPE1() {
+        
+        TYPE1* result = (TYPE1 *)new TYPE1();
+        result->Size = sizeof(TYPE1);
+
+        return result;
+    }
+}
+%enddef
+
+%setSizeInCtor(_ctl_fan_speed_t);
+%setSizeInCtor(_ctl_temp_properties_t);
+
 %define %pointer_cast(TYPE1,TYPE2,NAME)
 %inline %{
 TYPE2 NAME(TYPE1 x) {

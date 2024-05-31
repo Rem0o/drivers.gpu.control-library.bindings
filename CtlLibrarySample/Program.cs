@@ -21,10 +21,9 @@ internal class Program
 
             // SET SPEED
 
-            var speed = new ctl_fan_speed_t
+            var speed = new ctl_fan_speed_t()
             {
                 units = ctl_fan_speed_units_t.CTL_FAN_SPEED_UNITS_PERCENT,
-                // version?
             }.DisposeWith(disposable);
 
             var fanHandles = devices.SelectMany(d => CtlLibraryHelpers.GetFanHandles(d).DisposeWith(disposable).GetItems((a, i) => a.getitem(i))).ToArray();
@@ -71,8 +70,6 @@ internal class Program
             // CLOSE
             CtlLibrary.ctlClose(apiHandle).ThrowIfError("Close");
         }
-
-
     }
 
     private static SWIGTYPE_p__ctl_api_handle_t GetApiHandle(CompositeDisposable disposable)
