@@ -44,6 +44,7 @@
 
 %setSizeInCtor(_ctl_fan_speed_t);
 %setSizeInCtor(_ctl_temp_properties_t);
+%setSizeInCtor(_ctl_device_adapter_properties_t);
 
 %define %pointer_cast(TYPE1,TYPE2,NAME)
 %inline %{
