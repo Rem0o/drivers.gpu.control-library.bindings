@@ -1,6 +1,6 @@
 #include "CtlLibraryHelper.h"
 
-void CtlLibraryHelper::SetFlatFanSpeedTable(ctl_fan_handle_t fanHandle, ctl_fan_speed_table_t* table, int speedPercent)
+ctl_result_t CTL_APICALL CtlLibraryHelper::SetFlatFanSpeedTable(ctl_fan_handle_t fanHandle, ctl_fan_speed_table_t* table, int speedPercent)
 {
 	// setup the table if not already done
 	if (table->Size == 0)
@@ -25,5 +25,5 @@ void CtlLibraryHelper::SetFlatFanSpeedTable(ctl_fan_handle_t fanHandle, ctl_fan_
 		table->table[i].speed.speed = speedPercent;
 	}
 
-	ctlFanSetSpeedTableMode(fanHandle, table);
+	return ctlFanSetSpeedTableMode(fanHandle, table);
 }

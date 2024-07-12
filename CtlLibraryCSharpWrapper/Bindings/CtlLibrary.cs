@@ -577,8 +577,9 @@ public class CtlLibrary {
     } 
   }
 
-  public static void SetFlatFanSpeedTable(SWIGTYPE_p__ctl_fan_handle_t fanHandle, ctl_fan_speed_table_t table, int speedPercent) {
-    CtlLibraryPINVOKE.SetFlatFanSpeedTable(SWIGTYPE_p__ctl_fan_handle_t.getCPtr(fanHandle), ctl_fan_speed_table_t.getCPtr(table), speedPercent);
+  public static ctl_result_t SetFlatFanSpeedTable(SWIGTYPE_p__ctl_fan_handle_t fanHandle, ctl_fan_speed_table_t table, int speedPercent) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.SetFlatFanSpeedTable(SWIGTYPE_p__ctl_fan_handle_t.getCPtr(fanHandle), ctl_fan_speed_table_t.getCPtr(table), speedPercent);
+    return ret;
   }
 
   public static ctl_init_args_t create_Init_Args() {
