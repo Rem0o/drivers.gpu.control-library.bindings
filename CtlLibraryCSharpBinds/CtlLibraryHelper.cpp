@@ -6,15 +6,17 @@ ctl_result_t CTL_APICALL CtlLibraryHelper::SetFlatFanSpeedTable(ctl_fan_handle_t
 	if (table->numPoints != tableNumPoints)
 	{
 		table->numPoints = tableNumPoints;
+		table->Version = 0;
 
-		ctl_fan_temp_speed_t* pair;
 		for (int i = 0; i < table->numPoints; i++)
 		{
-			pair = &table->table[i];
-			pair->Size = sizeof(ctl_fan_temp_speed_t);
-			pair->temperature = ((i + 1) * 20);
-			pair->speed.units = CTL_FAN_SPEED_UNITS_PERCENT;
-			pair->speed.Size = sizeof(ctl_fan_speed_t);
+			table->table[i] = { 0 };
+			table->table[i].Version = 0;
+			table->table[i].Size = sizeof(ctl_fan_temp_speed_t);
+			table->table[i].temperature = ((i + 1) * 20);
+			table->table[i].speed.Version = 0;
+			table->table[i].speed.units = CTL_FAN_SPEED_UNITS_PERCENT;
+			table->table[i].speed.Size = sizeof(ctl_fan_speed_t);
 		}
 	}
 
