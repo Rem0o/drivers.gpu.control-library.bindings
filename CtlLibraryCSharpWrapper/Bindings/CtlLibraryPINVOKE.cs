@@ -6193,6 +6193,12 @@ class CtlLibraryPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_GetControlAPIDLLPath")]
   public static extern int GetControlAPIDLLPath(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_tableNumPoints_get")]
+  public static extern int tableNumPoints_get();
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_SetFlatFanSpeedTable")]
+  public static extern void SetFlatFanSpeedTable(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryCSharpBind", EntryPoint="CSharp_CtlLibraryBindings_create_Init_Args")]
   public static extern global::System.IntPtr create_Init_Args();
 

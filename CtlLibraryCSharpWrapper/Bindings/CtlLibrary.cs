@@ -570,6 +570,17 @@ public class CtlLibrary {
     return ret;
   }
 
+  public static int tableNumPoints {
+    get {
+      int ret = CtlLibraryPINVOKE.tableNumPoints_get();
+      return ret;
+    } 
+  }
+
+  public static void SetFlatFanSpeedTable(SWIGTYPE_p__ctl_fan_handle_t fanHandle, ctl_fan_speed_table_t table, int speedPercent) {
+    CtlLibraryPINVOKE.SetFlatFanSpeedTable(SWIGTYPE_p__ctl_fan_handle_t.getCPtr(fanHandle), ctl_fan_speed_table_t.getCPtr(table), speedPercent);
+  }
+
   public static ctl_init_args_t create_Init_Args() {
     ctl_init_args_t ret = new ctl_init_args_t(CtlLibraryPINVOKE.create_Init_Args(), true);
     return ret;

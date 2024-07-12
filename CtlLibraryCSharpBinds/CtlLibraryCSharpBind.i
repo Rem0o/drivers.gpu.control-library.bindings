@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include "../../drivers.gpu.control-library/Include/igcl_api.h"
 #include "../../drivers.gpu.control-library/Source/cApiWrapper.cpp"
+#include "CtlLibraryHelper.h"
 %}
 
 %include stdint.i
@@ -16,6 +17,7 @@
 
 %include "../../drivers.gpu.control-library/Include/igcl_api.h"
 %include "../../drivers.gpu.control-library/Source/cApiWrapper.cpp"
+%include "CtlLibraryHelper.h"
 
 %inline %{
   ctl_init_args_t create_Init_Args() {
@@ -45,6 +47,7 @@
 %setSizeInCtor(_ctl_fan_speed_t);
 %setSizeInCtor(_ctl_temp_properties_t);
 %setSizeInCtor(_ctl_device_adapter_properties_t);
+%setSizeInCtor(_ctl_fan_speed_table_t);
 
 %define %pointer_cast(TYPE1,TYPE2,NAME)
 %inline %{
