@@ -153,6 +153,39 @@ public class ctl_oc_properties_t : global::System.IDisposable {
     } 
   }
 
+  public ctl_oc_control_info_t vramMemSpeedLimit {
+    set {
+      CtlLibraryPINVOKE.ctl_oc_properties_t_vramMemSpeedLimit_set(swigCPtr, ctl_oc_control_info_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_oc_properties_t_vramMemSpeedLimit_get(swigCPtr);
+      ctl_oc_control_info_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_control_info_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_control_info_t gpuVFCurveVoltageLimit {
+    set {
+      CtlLibraryPINVOKE.ctl_oc_properties_t_gpuVFCurveVoltageLimit_set(swigCPtr, ctl_oc_control_info_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_oc_properties_t_gpuVFCurveVoltageLimit_get(swigCPtr);
+      ctl_oc_control_info_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_control_info_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_control_info_t gpuVFCurveFrequencyLimit {
+    set {
+      CtlLibraryPINVOKE.ctl_oc_properties_t_gpuVFCurveFrequencyLimit_set(swigCPtr, ctl_oc_control_info_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_oc_properties_t_gpuVFCurveFrequencyLimit_get(swigCPtr);
+      ctl_oc_control_info_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_control_info_t(cPtr, false);
+      return ret;
+    } 
+  }
+
   public ctl_oc_properties_t() : this(CtlLibraryPINVOKE.new_ctl_oc_properties_t(), true) {
   }
 

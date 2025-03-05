@@ -3,7 +3,7 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="CtlLibraryCSharpBind_wrap.cxx" />
+    <ClCompile Include="CtlLibraryBindings_wrap.cxx" />
     <ClCompile Include="CtlLibraryHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -12,6 +12,6 @@
     <ClInclude Include="CtlLibraryHelper.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="CtlLibraryCSharpBind.i" />
+    <CustomBuild Include="CtlLibraryBindings.i" />
   </ItemGroup>
 </Project>

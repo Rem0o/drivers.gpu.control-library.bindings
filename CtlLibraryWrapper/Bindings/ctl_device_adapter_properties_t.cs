@@ -260,6 +260,16 @@ public class ctl_device_adapter_properties_t : global::System.IDisposable {
     } 
   }
 
+  public uint num_xe_cores {
+    set {
+      CtlLibraryPINVOKE.ctl_device_adapter_properties_t_num_xe_cores_set(swigCPtr, value);
+    } 
+    get {
+      uint ret = CtlLibraryPINVOKE.ctl_device_adapter_properties_t_num_xe_cores_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public string reserved {
     set {
       CtlLibraryPINVOKE.ctl_device_adapter_properties_t_reserved_set(swigCPtr, value);

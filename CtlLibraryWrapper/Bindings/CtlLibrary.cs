@@ -331,6 +331,26 @@ public class CtlLibrary {
     return ret;
   }
 
+  public static ctl_result_t ctlGetFirmwareProperties(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceAdapter, ctl_firmware_properties_t pProperties) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlGetFirmwareProperties(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceAdapter), ctl_firmware_properties_t.getCPtr(pProperties));
+    return ret;
+  }
+
+  public static ctl_result_t ctlEnumerateFirmwareComponents(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceAdapter, SWIGTYPE_p_unsigned_int pCount, SWIGTYPE_p_p__ctl_firmware_component_handle_t phFirmware) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlEnumerateFirmwareComponents(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceAdapter), SWIGTYPE_p_unsigned_int.getCPtr(pCount), SWIGTYPE_p_p__ctl_firmware_component_handle_t.getCPtr(phFirmware));
+    return ret;
+  }
+
+  public static ctl_result_t ctlGetFirmwareComponentProperties(SWIGTYPE_p__ctl_firmware_component_handle_t hFirmware, ctl_firmware_component_properties_t pProperties) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlGetFirmwareComponentProperties(SWIGTYPE_p__ctl_firmware_component_handle_t.getCPtr(hFirmware), ctl_firmware_component_properties_t.getCPtr(pProperties));
+    return ret;
+  }
+
+  public static ctl_result_t ctlAllowPCIeLinkSpeedUpdate(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceAdapter, bool AllowPCIeLinkSpeedUpdate) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlAllowPCIeLinkSpeedUpdate(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceAdapter), AllowPCIeLinkSpeedUpdate);
+    return ret;
+  }
+
   public static ctl_result_t ctlEnumFrequencyDomains(SWIGTYPE_p__ctl_device_adapter_handle_t hDAhandle, SWIGTYPE_p_unsigned_int pCount, SWIGTYPE_p_p__ctl_freq_handle_t phFrequency) {
     ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlEnumFrequencyDomains(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDAhandle), SWIGTYPE_p_unsigned_int.getCPtr(pCount), SWIGTYPE_p_p__ctl_freq_handle_t.getCPtr(phFrequency));
     return ret;
@@ -363,6 +383,26 @@ public class CtlLibrary {
 
   public static ctl_result_t ctlFrequencyGetThrottleTime(SWIGTYPE_p__ctl_freq_handle_t hFrequency, ctl_freq_throttle_time_t pThrottleTime) {
     ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlFrequencyGetThrottleTime(SWIGTYPE_p__ctl_freq_handle_t.getCPtr(hFrequency), ctl_freq_throttle_time_t.getCPtr(pThrottleTime));
+    return ret;
+  }
+
+  public static ctl_result_t ctlEnumLeds(SWIGTYPE_p__ctl_device_adapter_handle_t hDAhandle, SWIGTYPE_p_unsigned_int pCount, SWIGTYPE_p_p__ctl_led_handle_t phLed) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlEnumLeds(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDAhandle), SWIGTYPE_p_unsigned_int.getCPtr(pCount), SWIGTYPE_p_p__ctl_led_handle_t.getCPtr(phLed));
+    return ret;
+  }
+
+  public static ctl_result_t ctlLedGetProperties(SWIGTYPE_p__ctl_led_handle_t hLed, ctl_led_properties_t pProperties) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlLedGetProperties(SWIGTYPE_p__ctl_led_handle_t.getCPtr(hLed), ctl_led_properties_t.getCPtr(pProperties));
+    return ret;
+  }
+
+  public static ctl_result_t ctlLedGetState(SWIGTYPE_p__ctl_led_handle_t hLed, ctl_led_state_t pState) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlLedGetState(SWIGTYPE_p__ctl_led_handle_t.getCPtr(hLed), ctl_led_state_t.getCPtr(pState));
+    return ret;
+  }
+
+  public static ctl_result_t ctlLedSetState(SWIGTYPE_p__ctl_led_handle_t hLed, SWIGTYPE_p_void pBuffer, uint bufferSize) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlLedSetState(SWIGTYPE_p__ctl_led_handle_t.getCPtr(hLed), SWIGTYPE_p_void.getCPtr(pBuffer), bufferSize);
     return ret;
   }
 
@@ -484,6 +524,66 @@ public class CtlLibrary {
 
   public static ctl_result_t ctlOverclockResetToDefault(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle) {
     ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockResetToDefault(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle));
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockGpuFrequencyOffsetGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, SWIGTYPE_p_double pOcFrequencyOffset) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockGpuFrequencyOffsetGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), SWIGTYPE_p_double.getCPtr(pOcFrequencyOffset));
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockGpuFrequencyOffsetSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, double ocFrequencyOffset) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockGpuFrequencyOffsetSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), ocFrequencyOffset);
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockGpuMaxVoltageOffsetGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, SWIGTYPE_p_double pOcMaxVoltageOffset) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockGpuMaxVoltageOffsetGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), SWIGTYPE_p_double.getCPtr(pOcMaxVoltageOffset));
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockGpuMaxVoltageOffsetSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, double ocMaxVoltageOffset) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockGpuMaxVoltageOffsetSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), ocMaxVoltageOffset);
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockVramMemSpeedLimitGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, SWIGTYPE_p_double pOcVramMemSpeedLimit) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockVramMemSpeedLimitGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), SWIGTYPE_p_double.getCPtr(pOcVramMemSpeedLimit));
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockVramMemSpeedLimitSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, double ocVramMemSpeedLimit) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockVramMemSpeedLimitSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), ocVramMemSpeedLimit);
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockPowerLimitGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, SWIGTYPE_p_double pSustainedPowerLimit) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockPowerLimitGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), SWIGTYPE_p_double.getCPtr(pSustainedPowerLimit));
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockPowerLimitSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, double sustainedPowerLimit) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockPowerLimitSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), sustainedPowerLimit);
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockTemperatureLimitGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, SWIGTYPE_p_double pTemperatureLimit) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockTemperatureLimitGetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), SWIGTYPE_p_double.getCPtr(pTemperatureLimit));
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockTemperatureLimitSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceHandle, double temperatureLimit) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockTemperatureLimitSetV2(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceHandle), temperatureLimit);
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockReadVFCurve(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceAdapter, ctl_vf_curve_type_t VFCurveType, ctl_vf_curve_details_t VFCurveDetail, SWIGTYPE_p_unsigned_int pNumPoints, ctl_voltage_frequency_point_t pVFCurveTable) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockReadVFCurve(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceAdapter), (int)VFCurveType, (int)VFCurveDetail, SWIGTYPE_p_unsigned_int.getCPtr(pNumPoints), ctl_voltage_frequency_point_t.getCPtr(pVFCurveTable));
+    return ret;
+  }
+
+  public static ctl_result_t ctlOverclockWriteCustomVFCurve(SWIGTYPE_p__ctl_device_adapter_handle_t hDeviceAdapter, uint NumPoints, ctl_voltage_frequency_point_t pCustomVFCurveTable) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlOverclockWriteCustomVFCurve(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDeviceAdapter), NumPoints, ctl_voltage_frequency_point_t.getCPtr(pCustomVFCurveTable));
     return ret;
   }
 
@@ -726,6 +826,9 @@ public class CtlLibrary {
   public static readonly int CTL_MAX_DISPLAYS_FOR_MGPU_COLLAGE = CtlLibraryPINVOKE.CTL_MAX_DISPLAYS_FOR_MGPU_COLLAGE_get();
   public static readonly int CTL_MAX_WIREFORMAT_COLOR_MODELS_SUPPORTED = CtlLibraryPINVOKE.CTL_MAX_WIREFORMAT_COLOR_MODELS_SUPPORTED_get();
   public static readonly int CTL_FAN_TEMP_SPEED_PAIR_COUNT = CtlLibraryPINVOKE.CTL_FAN_TEMP_SPEED_PAIR_COUNT_get();
+  public static readonly int CTL_FIRMWARE_PROPERTY_STR_SIZE = CtlLibraryPINVOKE.CTL_FIRMWARE_PROPERTY_STR_SIZE_get();
+  public static readonly int CTL_MAX_FIRMWARE_PROPERTIES_RESERVED_SIZE = CtlLibraryPINVOKE.CTL_MAX_FIRMWARE_PROPERTIES_RESERVED_SIZE_get();
+  public static readonly int CTL_MAX_FIRMWARE_COMPONENT_PROPERTIES_RESERVED_SIZE = CtlLibraryPINVOKE.CTL_MAX_FIRMWARE_COMPONENT_PROPERTIES_RESERVED_SIZE_get();
   public static readonly int CTL_PSU_COUNT = CtlLibraryPINVOKE.CTL_PSU_COUNT_get();
   public static readonly int CTL_FAN_COUNT = CtlLibraryPINVOKE.CTL_FAN_COUNT_get();
   public static readonly SWIGTYPE_p_wchar_t CTL_DLL_NAME = new SWIGTYPE_p_wchar_t(CtlLibraryPINVOKE.CTL_DLL_NAME_get(), false);

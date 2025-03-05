@@ -375,6 +375,105 @@ public class ctl_power_telemetry_t : global::System.IDisposable {
     } 
   }
 
+  public ctl_oc_telemetry_item_t gpuVrTemp {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuVrTemp_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuVrTemp_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_telemetry_item_t vramVrTemp {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_vramVrTemp_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_vramVrTemp_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_telemetry_item_t saVrTemp {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_saVrTemp_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_saVrTemp_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_telemetry_item_t gpuEffectiveClock {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuEffectiveClock_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuEffectiveClock_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_telemetry_item_t gpuOverVoltagePercent {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuOverVoltagePercent_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuOverVoltagePercent_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_telemetry_item_t gpuPowerPercent {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuPowerPercent_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuPowerPercent_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_telemetry_item_t gpuTemperaturePercent {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuTemperaturePercent_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_gpuTemperaturePercent_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_telemetry_item_t vramReadBandwidth {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_vramReadBandwidth_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_vramReadBandwidth_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
+  public ctl_oc_telemetry_item_t vramWriteBandwidth {
+    set {
+      CtlLibraryPINVOKE.ctl_power_telemetry_t_vramWriteBandwidth_set(swigCPtr, ctl_oc_telemetry_item_t.getCPtr(value));
+    } 
+    get {
+      global::System.IntPtr cPtr = CtlLibraryPINVOKE.ctl_power_telemetry_t_vramWriteBandwidth_get(swigCPtr);
+      ctl_oc_telemetry_item_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new ctl_oc_telemetry_item_t(cPtr, false);
+      return ret;
+    } 
+  }
+
   public ctl_power_telemetry_t() : this(CtlLibraryPINVOKE.new_ctl_power_telemetry_t(), true) {
   }
 

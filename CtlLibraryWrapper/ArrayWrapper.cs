@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace CtlLibraryCSharpWrapper
+namespace CtlLibraryWrapper
 {
     public static class ArrayWrapper
     {

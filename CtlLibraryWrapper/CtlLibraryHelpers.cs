@@ -1,7 +1,7 @@
 ﻿using CtlLibraryBindings;
 using System;
 
-namespace CtlLibraryCSharpWrapper
+namespace CtlLibraryWrapper
 {
     public static class CtlLibraryHelpers
     {

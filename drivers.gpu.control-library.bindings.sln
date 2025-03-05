@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CtlLibraryCSharpBind", "CtlLibraryCSharpBinds\CtlLibraryCSharpBind.vcxproj", "{37662C43-52C5-436A-A37A-58D34BA3C10E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CtlLibraryBindings", "CtlLibraryBindings\CtlLibraryBindings.vcxproj", "{37662C43-52C5-436A-A37A-58D34BA3C10E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CtlLibraryCSharpWrapper", "CtlLibraryCSharpWrapper\CtlLibraryCSharpWrapper.csproj", "{CB4F2B14-C854-4E1F-9712-39D95712AB9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CtlLibraryWrapper", "CtlLibraryWrapper\CtlLibraryWrapper.csproj", "{CB4F2B14-C854-4E1F-9712-39D95712AB9C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{37662C43-52C5-436A-A37A-58D34BA3C10E} = {37662C43-52C5-436A-A37A-58D34BA3C10E}
 	EndProjectSection

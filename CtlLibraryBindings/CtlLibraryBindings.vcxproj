@@ -22,8 +22,9 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{37662c43-52c5-436a-a37a-58d34ba3c10e}</ProjectGuid>
-    <RootNamespace>CtlLibraryCSharpBind</RootNamespace>
+    <RootNamespace>CtlLibraryBindings</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CtlLibraryBindings</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -86,7 +87,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;CTLLIBRARYCSHARPBIND_EXPORTS;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;CTLLIBRARYBINDINGS_EXPORTS;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -103,7 +104,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;CTLLIBRARYCSHARPBIND_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;CTLLIBRARYBINDINGS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -120,7 +121,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;CTLLIBRARYCSHARPBIND_EXPORTS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;CTLLIBRARYBINDINGS_EXPORTS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -139,7 +140,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;CTLLIBRARYCSHARPBIND_EXPORTS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;CTLLIBRARYBINDINGS_EXPORTS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -159,7 +160,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CtlLibraryCSharpBind_wrap.cxx" />
+    <ClCompile Include="CtlLibraryBindings_wrap.cxx" />
     <ClCompile Include="CtlLibraryHelper.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp">
@@ -170,11 +171,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="CtlLibraryCSharpBind.i">
+    <CustomBuild Include="CtlLibraryBindings.i">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">swig -csharp -c++ -namespace CtlLibraryBindings -dllimport CtlLibraryCSharpBind -outdir .\..\CtlLibraryCSharpWrapper\Bindings CtlLibraryCSharpBind.i</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">swig -csharp -c++ -namespace CtlLibraryBindings -dllimport CtlLibraryBindings -outdir .\..\CtlLibraryWrapper\Bindings CtlLibraryBindings.i</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)_wrap.cxx</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">swig -csharp -c++ -namespace CtlLibraryBindings -dllimport CtlLibraryCSharpBind -outdir .\..\CtlLibraryCSharpWrapper\Bindings CtlLibraryCSharpBind.i</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">swig -csharp -c++ -namespace CtlLibraryBindings -dllimport CtlLibraryBindings -outdir .\..\CtlLibraryWrapper\Bindings CtlLibraryBindings.i</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)_wrap.cxx</Outputs>
     </CustomBuild>
   </ItemGroup>

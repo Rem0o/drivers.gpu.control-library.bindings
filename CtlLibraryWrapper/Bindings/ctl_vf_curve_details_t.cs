@@ -10,12 +10,11 @@
 
 namespace CtlLibraryBindings {
 
-public enum ctl_3d_feature_misc_flag_t {
-  CTL_3D_FEATURE_MISC_FLAG_DX11 = (1 << 0),
-  CTL_3D_FEATURE_MISC_FLAG_DX12 = (1 << 1),
-  CTL_3D_FEATURE_MISC_FLAG_VULKAN = (1 << 2),
-  CTL_3D_FEATURE_MISC_FLAG_LIVE_CHANGE = (1 << 3),
-  CTL_3D_FEATURE_MISC_FLAG_MAX = -2147483648
+public enum ctl_vf_curve_details_t {
+  CTL_VF_CURVE_DETAILS_SIMPLIFIED = 0,
+  CTL_VF_CURVE_DETAILS_MEDIUM = 1,
+  CTL_VF_CURVE_DETAILS_ELABORATE = 2,
+  CTL_VF_CURVE_DETAILS_MAX
 }
 
 }
