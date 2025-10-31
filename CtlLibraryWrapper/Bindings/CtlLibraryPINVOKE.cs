@@ -4075,6 +4075,75 @@ class CtlLibraryPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctlGetSetDisplaySettings")]
   public static extern int ctlGetSetDisplaySettings(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_properties_t_Size_set")]
+  public static extern void ctl_ecc_properties_t_Size_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_properties_t_Size_get")]
+  public static extern uint ctl_ecc_properties_t_Size_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_properties_t_Version_set")]
+  public static extern void ctl_ecc_properties_t_Version_set(global::System.Runtime.InteropServices.HandleRef jarg1, byte jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_properties_t_Version_get")]
+  public static extern byte ctl_ecc_properties_t_Version_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_properties_t_isSupported_set")]
+  public static extern void ctl_ecc_properties_t_isSupported_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_properties_t_isSupported_get")]
+  public static extern bool ctl_ecc_properties_t_isSupported_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_properties_t_canControl_set")]
+  public static extern void ctl_ecc_properties_t_canControl_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_properties_t_canControl_get")]
+  public static extern bool ctl_ecc_properties_t_canControl_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_new_ctl_ecc_properties_t")]
+  public static extern global::System.IntPtr new_ctl_ecc_properties_t();
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_delete_ctl_ecc_properties_t")]
+  public static extern void delete_ctl_ecc_properties_t(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_state_desc_t_Size_set")]
+  public static extern void ctl_ecc_state_desc_t_Size_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_state_desc_t_Size_get")]
+  public static extern uint ctl_ecc_state_desc_t_Size_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_state_desc_t_Version_set")]
+  public static extern void ctl_ecc_state_desc_t_Version_set(global::System.Runtime.InteropServices.HandleRef jarg1, byte jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_state_desc_t_Version_get")]
+  public static extern byte ctl_ecc_state_desc_t_Version_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_state_desc_t_currentEccState_set")]
+  public static extern void ctl_ecc_state_desc_t_currentEccState_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_state_desc_t_currentEccState_get")]
+  public static extern int ctl_ecc_state_desc_t_currentEccState_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_state_desc_t_pendingEccState_set")]
+  public static extern void ctl_ecc_state_desc_t_pendingEccState_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_ecc_state_desc_t_pendingEccState_get")]
+  public static extern int ctl_ecc_state_desc_t_pendingEccState_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_new_ctl_ecc_state_desc_t")]
+  public static extern global::System.IntPtr new_ctl_ecc_state_desc_t();
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_delete_ctl_ecc_state_desc_t")]
+  public static extern void delete_ctl_ecc_state_desc_t(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctlEccGetProperties")]
+  public static extern int ctlEccGetProperties(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctlEccGetState")]
+  public static extern int ctlEccGetState(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctlEccSetState")]
+  public static extern int ctlEccSetState(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
   [global::System.Runtime.InteropServices.DllImport("CtlLibraryBindings", EntryPoint="CSharp_CtlLibraryBindings_ctl_engine_properties_t_Size_set")]
   public static extern void ctl_engine_properties_t_Size_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 

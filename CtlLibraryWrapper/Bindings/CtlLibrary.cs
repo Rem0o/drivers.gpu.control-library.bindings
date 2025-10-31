@@ -281,6 +281,21 @@ public class CtlLibrary {
     return ret;
   }
 
+  public static ctl_result_t ctlEccGetProperties(SWIGTYPE_p__ctl_device_adapter_handle_t hDAhandle, ctl_ecc_properties_t pProperties) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlEccGetProperties(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDAhandle), ctl_ecc_properties_t.getCPtr(pProperties));
+    return ret;
+  }
+
+  public static ctl_result_t ctlEccGetState(SWIGTYPE_p__ctl_device_adapter_handle_t hDAhandle, ctl_ecc_state_desc_t pState) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlEccGetState(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDAhandle), ctl_ecc_state_desc_t.getCPtr(pState));
+    return ret;
+  }
+
+  public static ctl_result_t ctlEccSetState(SWIGTYPE_p__ctl_device_adapter_handle_t hDAhandle, ctl_ecc_state_desc_t pState) {
+    ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlEccSetState(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDAhandle), ctl_ecc_state_desc_t.getCPtr(pState));
+    return ret;
+  }
+
   public static ctl_result_t ctlEnumEngineGroups(SWIGTYPE_p__ctl_device_adapter_handle_t hDAhandle, SWIGTYPE_p_unsigned_int pCount, SWIGTYPE_p_p__ctl_engine_handle_t phEngine) {
     ctl_result_t ret = (ctl_result_t)CtlLibraryPINVOKE.ctlEnumEngineGroups(SWIGTYPE_p__ctl_device_adapter_handle_t.getCPtr(hDAhandle), SWIGTYPE_p_unsigned_int.getCPtr(pCount), SWIGTYPE_p_p__ctl_engine_handle_t.getCPtr(phEngine));
     return ret;
